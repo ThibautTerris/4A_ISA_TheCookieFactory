@@ -1,6 +1,5 @@
 package fr.unice.polytech.isa.tcf.managed;
 
-import fr.unice.polytech.isa.tcf.Tracker;
 import fr.unice.polytech.isa.tcf.exceptions.UnknownOrderId;
 
 import javax.ejb.EJB;

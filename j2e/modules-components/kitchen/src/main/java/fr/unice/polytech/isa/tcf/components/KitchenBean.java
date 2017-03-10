@@ -1,8 +1,5 @@
 package fr.unice.polytech.isa.tcf.components;
 
-import fr.unice.polytech.isa.tcf.OrderProcessing;
-import fr.unice.polytech.isa.tcf.Tracker;
-
 import javax.annotation.Resource;
 import javax.ejb.EJB;
 import javax.jms.*;
