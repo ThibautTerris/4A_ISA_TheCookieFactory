@@ -3,6 +3,7 @@ package fr.unice.polytech.isa.tcf.webservice;
 
 import fr.unice.polytech.isa.tcf.CatalogueExploration;
 import fr.unice.polytech.isa.tcf.CustomerRegistration;
+import fr.unice.polytech.isa.tcf.Tracker;
 import fr.unice.polytech.isa.tcf.entities.Cookies;
 import fr.unice.polytech.isa.tcf.entities.OrderStatus;
 import fr.unice.polytech.isa.tcf.exceptions.AlreadyExistingCustomerException;

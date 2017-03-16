@@ -1,5 +1,12 @@
 package fr.unice.polytech.isa.tcf.components;
 
+import fr.unice.polytech.isa.tcf.OrderProcessing;
+import fr.unice.polytech.isa.tcf.Tracker;
+import fr.unice.polytech.isa.tcf.entities.Order;
+import fr.unice.polytech.isa.tcf.entities.OrderStatus;
+import fr.unice.polytech.isa.tcf.exceptions.UnknownOrderId;
+import fr.unice.polytech.isa.tcf.utils.CookieScheduler;
+
 import javax.annotation.Resource;
 import javax.ejb.EJB;
 import javax.jms.*;

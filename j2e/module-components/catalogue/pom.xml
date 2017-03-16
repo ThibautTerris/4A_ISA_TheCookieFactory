@@ -13,6 +13,13 @@
 	<artifactId>tcf-backend-module-components-catalogue</artifactId>
 	<name>ISA :: The Cookie Factory :: J2E Backend :: Components module :: Catalogue</name>
 	<version>1.0-SNAPSHOT</version>
-	<packaging>war</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>fr.unice.polytech.isa</groupId>
+            <artifactId>tcf-backend-module-entities-items</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+    <packaging>war</packaging>
 	
 </project>

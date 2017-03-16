@@ -1,6 +1,7 @@
 package fr.unice.polytech.isa.tcf.components;
 
 import fr.unice.polytech.isa.tcf.ControlledPayment;
+import fr.unice.polytech.isa.tcf.OrderProcessing;
 import fr.unice.polytech.isa.tcf.Payment;
 import fr.unice.polytech.isa.tcf.entities.Customer;
 import fr.unice.polytech.isa.tcf.entities.Item;
