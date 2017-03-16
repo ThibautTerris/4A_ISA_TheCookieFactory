@@ -10,9 +10,16 @@
 	
 	<modelVersion>4.0.0</modelVersion>
     <groupId>fr.unice.polytech.isa</groupId>
-	<artifactId>tcf-backend-module-exceptions</artifactId>
-	<name>ISA :: The Cookie Factory :: J2E Backend :: Exceptions module</name>
+	<artifactId>tcf-backend-module-components</artifactId>
+	<name>ISA :: The Cookie Factory :: J2E Backend :: Components module</name>
+	<packaging>pom</packaging>
 	<version>1.0-SNAPSHOT</version>
-	<packaging>war</packaging>
+	
+	<modules>
+		<module>catalogue</module>
+		<module>kitchen</module>
+		<module>registration</module>
+		<module>shop</module>
+	</modules>
 	
 </project>

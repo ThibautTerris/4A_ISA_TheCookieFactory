@@ -4,14 +4,14 @@
 		 
 	<parent>
 		<groupId>fr.unice.polytech.isa</groupId>
-		<artifactId>tcf-backend</artifactId>
+		<artifactId>tcf-backend-module-components</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 	
 	<modelVersion>4.0.0</modelVersion>
     <groupId>fr.unice.polytech.isa</groupId>
-	<artifactId>tcf-backend-module-exceptions</artifactId>
-	<name>ISA :: The Cookie Factory :: J2E Backend :: Exceptions module</name>
+	<artifactId>tcf-backend-module-components-registration</artifactId>
+	<name>ISA :: The Cookie Factory :: J2E Backend :: Components module :: Registration</name>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 	
