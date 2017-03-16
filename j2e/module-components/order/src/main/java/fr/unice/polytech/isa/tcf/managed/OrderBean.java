@@ -1,6 +1,11 @@
 package fr.unice.polytech.isa.tcf.managed;
 
-import fr.unice.polytech.isa.tcf.*;
+
+import fr.unice.polytech.isa.tcf.Signal;
+import fr.unice.polytech.isa.tcf.CartModifier;
+import fr.unice.polytech.isa.tcf.CartProcessor;
+import fr.unice.polytech.isa.tcf.CatalogueExploration;
+import fr.unice.polytech.isa.tcf.CustomerFinder;
 import fr.unice.polytech.isa.tcf.entities.Cookies;
 import fr.unice.polytech.isa.tcf.entities.Customer;
 import fr.unice.polytech.isa.tcf.entities.Item;
