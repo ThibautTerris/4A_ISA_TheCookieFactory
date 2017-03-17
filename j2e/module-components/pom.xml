@@ -1,25 +1,33 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-		 
+
 	<parent>
 		<groupId>fr.unice.polytech.isa</groupId>
 		<artifactId>tcf-backend</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-	
+
 	<modelVersion>4.0.0</modelVersion>
     <groupId>fr.unice.polytech.isa</groupId>
 	<artifactId>tcf-backend-module-components</artifactId>
 	<name>ISA :: The Cookie Factory :: J2E Backend :: Components module</name>
 	<packaging>pom</packaging>
 	<version>1.0-SNAPSHOT</version>
-	
+
 	<modules>
 		<module>catalogue</module>
 		<module>kitchen</module>
 		<module>registration</module>
 		<module>shop</module>
 	</modules>
-	
+
+  <repositories>
+    <!-- Artifactory repository -->
+    <repository>
+      <id>tcf-j2e-repository</id>
+      <url>${artifactory.address}:8081</url>
+    </repository>
+  </repositories>
+
 </project>
