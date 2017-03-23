@@ -30,8 +30,8 @@
   <repositories>
     <!-- Artifactory repository -->
     <repository>
-      <id>tcf-j2e-repository</id>
-      <url>${artifactory.address}:8081</url>
+      <id>${artifactory.id}</id>
+      <url>${artifactory.address}</url>
     </repository>
   </repositories>
 

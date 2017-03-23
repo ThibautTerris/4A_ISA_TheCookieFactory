@@ -40,20 +40,16 @@
     <versions.arquilian.jta>1.0.3.Final</versions.arquilian.jta>
     <versions.shrinkwrap>2.2.6</versions.shrinkwrap>
 
-    <artifactory.address>10.212.122.110</artifactory.address>
+    <artifactory.name>682b5f098a4e</artifactory.name>
+    <artifactory.id>tcf-j2e-repository</artifactory.id>
+    <artifactory.address>http://localhost:8081/artifactory/tcf-j2e-repository</artifactory.address>
   </properties>
 
   <repositories>
     <!-- Artifactory repository -->
     <repository>
-      <id>tcf-j2e-repository</id>
-      <url>${artifactory.address}:8081</url>
-    </repository>
-    <!-- Snapshot repository to access to the latest version of the OpenEJB framework -->
-    <repository>
-      <id>apache-m2-snapshot</id>
-      <name>Apache Snapshot Repository</name>
-      <url>https://repository.apache.org/content/groups/snapshots</url>
+      <id>${artifactory.id}</id>
+      <url>${artifactory.address}</url>
     </repository>
   </repositories>
 
@@ -197,24 +193,23 @@
         </configuration>
       </plugin>
       <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-deploy-plugin</artifactId>
-      <version>2.7</version>
-    </plugin>
-
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <version>2.7</version>
+      </plugin>
     </plugins>
   </build>
 
   <distributionManagement>
     <repository>
-      <id>central</id>
-      <name>tcf-releases</name>
-      <url>${artifactory.address}:8081</url>
+        <id>central</id>
+        <name>${artifactory.name}-releases</name>
+        <url>${artifactory.address}</url>
     </repository>
     <snapshotRepository>
-      <id>snapshots</id>
-      <name>tcf-snapshots</name>
-      <url>${artifactory.address}:8081</url>
+        <id>snapshots</id>
+        <name>${artifactory.name}-snapshots</name>
+        <url>${artifactory.address}</url>
     </snapshotRepository>
-  </distributionManagement>
+</distributionManagement>
 </project>
