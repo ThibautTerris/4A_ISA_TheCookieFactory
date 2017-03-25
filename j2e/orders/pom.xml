@@ -3,7 +3,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <properties>
+    <versions.maven.compiler>3.6.1</versions.maven.compiler>
+    <versions.java>1.8</versions.java>
+
+    <versions.javaee>7.0-1</versions.javaee>
     <versions.openjpa>2.4.1</versions.openjpa>
+    <versions.openejb>7.0.2</versions.openejb>
 
     <artifactory.name>682b5f098a4e</artifactory.name>
     <artifactory.id>tcf-j2e-repository</artifactory.id>
@@ -38,9 +43,17 @@
   </distributionManagement>
 
   <build>
-    <finalName>tcf-backend</finalName>
-    <defaultGoal>package</defaultGoal>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${versions.maven.compiler}</version>
+        <configuration>
+          <source>${versions.java}</source>
+          <target>${versions.java}</target>
+        </configuration>
+      </plugin>
+
       <plugin>
         <groupId>org.apache.openjpa</groupId>
         <artifactId>openjpa-maven-plugin</artifactId>
@@ -76,6 +89,20 @@
       <groupId>fr.unice.polytech.isa</groupId>
       <artifactId>items</artifactId>
       <version>1.0-SNAPSHOT</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.tomee</groupId>
+      <artifactId>javaee-api</artifactId>
+      <version>${versions.javaee}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.tomee</groupId>
+      <artifactId>openejb-core</artifactId>
+      <version>${versions.openejb}</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
 
