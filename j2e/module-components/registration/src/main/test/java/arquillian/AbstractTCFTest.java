@@ -1,6 +1,5 @@
 package arquillian;
 
-import fr.unice.polytech.isa.tcf.entities.Cookies;
 import fr.unice.polytech.isa.tcf.entities.Customer;
 import fr.unice.polytech.isa.tcf.exceptions.AlreadyExistingCustomerException;
 import fr.unice.polytech.isa.tcf.interceptors.LogParameters;
@@ -25,9 +24,9 @@ public abstract class AbstractTCFTest {
 		return ShrinkWrap.create(WebArchive.class)
 				.addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml")
 				// Utils
-                .addClass(Database.class)
+				.addPackage(Database.class.getPackage())
 				// Entities
-				.addClass(Cookies.class)
+				.addPackage(Customer.class.getPackage())
 				// Interceptors
 				.addPackage(LogParameters.class.getPackage())
 				// Exceptions

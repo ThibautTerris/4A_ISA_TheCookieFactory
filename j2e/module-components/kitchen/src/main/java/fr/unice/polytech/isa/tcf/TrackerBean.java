@@ -1,4 +1,4 @@
-package fr.unice.polytech.isa.tcf.managed;
+package fr.unice.polytech.isa.tcf;
 
 import fr.unice.polytech.isa.tcf.Tracker;
 import fr.unice.polytech.isa.tcf.exceptions.UnknownOrderId;

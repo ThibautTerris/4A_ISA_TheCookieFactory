@@ -26,7 +26,31 @@
     </dependency>
   </dependencies>
   <packaging>jar</packaging>
-
+  <build>
+    <finalName>tcf-backend</finalName>
+    <defaultGoal>package</defaultGoal>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.openjpa</groupId>
+        <artifactId>openjpa-maven-plugin</artifactId>
+        <version>${versions.openjpa}</version>
+        <configuration>
+          <includes>/Users/thibaut/Documents/SI4/Semester2/DevOps/CookieFactory/j2e/module-entities/*.class</includes>
+          <addDefaultConstructor>true</addDefaultConstructor>
+          <enforcePropertyRestrictions>true</enforcePropertyRestrictions>
+        </configuration>
+        <executions>
+          <execution>
+            <id>enhancer</id>
+            <phase>process-classes</phase>
+            <goals>
+              <goal>enhance</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
   <repositories>
     <!-- Artifactory repository -->
     <repository>

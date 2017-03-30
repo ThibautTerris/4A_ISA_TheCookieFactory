@@ -29,7 +29,7 @@
         <artifactId>openjpa-maven-plugin</artifactId>
         <version>${versions.openjpa}</version>
         <configuration>
-          <includes>**/entities/*.class</includes>
+          <includes>**/module-entities/*.class</includes>
           <addDefaultConstructor>true</addDefaultConstructor>
           <enforcePropertyRestrictions>true</enforcePropertyRestrictions>
         </configuration>
