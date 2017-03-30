@@ -12,7 +12,7 @@
 
     <artifactory.name>682b5f098a4e</artifactory.name>
     <artifactory.id>tcf-j2e-repository</artifactory.id>
-    <artifactory.address>http://192.168.0.38:8081/artifactory/tcf-j2e-repository</artifactory.address>
+    <artifactory.address>http://10.212.122.110:8081/artifactory/tcf-j2e-repository</artifactory.address>
   </properties>
 
   <modelVersion>4.0.0</modelVersion>

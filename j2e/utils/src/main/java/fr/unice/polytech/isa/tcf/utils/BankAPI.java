@@ -16,7 +16,7 @@ public class BankAPI {
 		this.url = "http://" + host + ":" + port;
 	}
 
-	public BankAPI() { this("192.168.0.38", "9090"); }
+	public BankAPI() { this("10.212.122.110", "9090"); }
 
 	public boolean performPayment(Customer customer, double value) throws ExternalPartnerException {
 		// Building payment request
