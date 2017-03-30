@@ -9,6 +9,7 @@ import fr.unice.polytech.isa.tcf.utils.CookieScheduler;
 
 import javax.annotation.Resource;
 import javax.ejb.EJB;
+import javax.ejb.Stateless;
 import javax.jms.*;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -18,6 +19,7 @@ import java.util.logging.Logger;
 /**
  * Created by huang on 10/03/17.
  */
+@Stateless
 public class KitchenBean implements OrderProcessing, Tracker {
 
     private static final Logger log = Logger.getLogger(KitchenBean.class.getName());

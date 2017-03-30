@@ -23,7 +23,7 @@ import fr.unice.polytech.isa.tcf.entities.*;
 
 @RunWith(CukeSpace.class)
 @CucumberOptions(features = "src/test/resources")
-public class OrderingCookies extends AbstractTCFTest {
+public class  OrderingCookies extends AbstractTCFTest {
     
     @EJB private CustomerRegistration registration;
     @EJB private CustomerFinder finder;

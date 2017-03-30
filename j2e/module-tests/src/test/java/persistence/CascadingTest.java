@@ -1,4 +1,4 @@
-package fr.unice.polytech.isa.tcf.persistence;
+package persistence;
 
 import arquillian.AbstractTCFTest;
 import fr.unice.polytech.isa.tcf.entities.*;

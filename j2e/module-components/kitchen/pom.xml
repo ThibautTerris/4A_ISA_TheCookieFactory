@@ -20,7 +20,7 @@
       <version>1.0-SNAPSHOT</version>
     </dependency>
   </dependencies>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
 
   <repositories>
     <!-- Artifactory repository -->
