@@ -1,6 +1,5 @@
 package fr.unice.polytech.isa.tcf.exceptions;
 
-
 import java.io.Serializable;
 
 public class EmptyCartException extends Exception implements Serializable {

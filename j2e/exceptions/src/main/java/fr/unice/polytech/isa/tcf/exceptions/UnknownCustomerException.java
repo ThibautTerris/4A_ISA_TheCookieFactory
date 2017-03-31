@@ -2,7 +2,6 @@ package fr.unice.polytech.isa.tcf.exceptions;
 
 import java.io.Serializable;
 
-
 public class UnknownCustomerException extends Exception implements Serializable {
 
 	private String name;
@@ -10,7 +9,6 @@ public class UnknownCustomerException extends Exception implements Serializable 
 	public UnknownCustomerException(String name) {
 		this.name = name;
 	}
-
 
 	public UnknownCustomerException() {
 	}
@@ -22,4 +20,5 @@ public class UnknownCustomerException extends Exception implements Serializable 
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 }

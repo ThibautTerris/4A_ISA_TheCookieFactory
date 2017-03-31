@@ -1,6 +1,5 @@
 package fr.unice.polytech.isa.tcf.exceptions;
 
-
 import java.io.Serializable;
 
 public class PaymentException extends Exception implements Serializable {
@@ -36,4 +35,5 @@ public class PaymentException extends Exception implements Serializable {
 	public void setAmount(double amount) {
 		this.amount = amount;
 	}
+	
 }

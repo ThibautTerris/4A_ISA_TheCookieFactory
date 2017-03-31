@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 public class ExternalPartnerException extends Exception implements Serializable {
 
-
 	public ExternalPartnerException() {}
 
 	public ExternalPartnerException(String n) {super(n); }
@@ -17,4 +16,5 @@ public class ExternalPartnerException extends Exception implements Serializable 
 	public String toString() {
 		return "ExternalPartnerException on " + getMessage() + " ->" + getCause().toString();
 	}
+	
 }

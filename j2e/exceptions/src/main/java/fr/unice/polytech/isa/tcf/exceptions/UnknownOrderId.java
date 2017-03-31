@@ -10,7 +10,6 @@ public class UnknownOrderId extends Exception implements Serializable {
 		orderId = id;
 	}
 
-
 	public UnknownOrderId() {
 	}
 
@@ -21,4 +20,5 @@ public class UnknownOrderId extends Exception implements Serializable {
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}
+	
 }

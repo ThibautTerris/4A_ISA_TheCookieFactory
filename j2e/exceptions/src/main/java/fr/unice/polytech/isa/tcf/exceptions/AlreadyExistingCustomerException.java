@@ -11,7 +11,6 @@ public class AlreadyExistingCustomerException extends Exception implements Seria
 		conflictingName = name;
 	}
 
-
 	public AlreadyExistingCustomerException() {
 	}
 
@@ -22,4 +21,5 @@ public class AlreadyExistingCustomerException extends Exception implements Seria
 	public void setConflictingName(String conflictingName) {
 		this.conflictingName = conflictingName;
 	}
+	
 }

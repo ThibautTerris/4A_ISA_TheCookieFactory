@@ -1,6 +1,5 @@
 package fr.unice.polytech.isa.tcf.exceptions;
 
-
 public class UncheckedException extends RuntimeException {
 
     public UncheckedException(Exception e) {
