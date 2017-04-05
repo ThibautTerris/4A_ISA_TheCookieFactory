@@ -76,4 +76,5 @@ public class CashierBean implements Payment, ControlledPayment {
         }
 	}
 
+
 }
