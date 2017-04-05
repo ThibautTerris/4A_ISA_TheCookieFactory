@@ -1,4 +1,5 @@
-package components;
+package fr.unice.polytech.isa.tcf.business;
+
 
 import arquillian.AbstractTCFTest;
 import fr.unice.polytech.isa.tcf.OrderProcessing;
@@ -17,15 +18,13 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.UserTransaction;
+
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 
-/**
- * Created by huang on 10/03/17.
- */
 @RunWith(Arquillian.class)
 @Transactional(TransactionMode.COMMIT)
 public class KitchenTest extends AbstractTCFTest {
