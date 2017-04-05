@@ -20,7 +20,7 @@
     <module>orders</module>
     <module>utils</module>
     <module>webservices</module>
-    <!-- <module>tests</module> -->
+    <module>tests</module>
     <!-- <module>integration</module> -->
   </modules>
 
